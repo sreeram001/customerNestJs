@@ -9,6 +9,7 @@ export class CustomerController {
   @Post()
   create(@Body() data: CustomerDto, @Res() response) {
     data.uId = uuidv4()
+    console.log(data,"data")
     try {
       this.customerService.create(data);
     } catch (error) {

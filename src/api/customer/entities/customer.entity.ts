@@ -20,6 +20,12 @@ export class Customer {
   })
   status: boolean;
 
+  @Prop({
+    type: [Object], 
+    default: []
+  }) // JSON array
+  orderData: JSON[];
+
 }
 
 export const CustomerSchema = SchemaFactory.createForClass(Customer);

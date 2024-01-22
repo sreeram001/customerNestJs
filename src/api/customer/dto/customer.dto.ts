@@ -5,8 +5,11 @@ export type CustomerDto = {
     readonly age: number;
 
     uId: string;
-}
 
+    // for JSON[] 
+    readonly orderData: JSON[];
+    
+}
 
 
 export class customerFilterDto {
